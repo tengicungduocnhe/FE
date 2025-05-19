@@ -1,0 +1,6 @@
+{
+  "name": "@jellyfin/ux-web",
+  "description": "UX resources for the Jellyfin Web client.",
+  "version": "1.0.0",
+  "license": "MIT"
+}
