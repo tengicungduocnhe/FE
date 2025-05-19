@@ -152,7 +152,7 @@
     "Firefox ESR"
   ],
   "scripts": {
-    "postinstall": "copy /Y custom-assets\\icon-transparent.png node_modules\\@jellyfin\\ux-web\\icon-transparent.png",
+    "postinstall": "copy /Y custom-assets\\icon-transparent.png node_modules\\@jellyfin\\ux-web\\icon-transparent.png && copy /Y custom-assets\\banner-dark.png node_modules\\@jellyfin\\ux-web\\banner-dark.png && copy /Y custom-assets\\banner-light.png node_modules\\@jellyfin\\ux-web\\banner-light.png && copy /Y custom-assets\\favicon\\favicon.ico node_modules\\@jellyfin\\ux-web\\favicon\\favicon.ico && copy /Y custom-assets\\favicon\\favicon.png node_modules\\@jellyfin\\ux-web\\favicon\\favicon.png && copy /Y custom-assets\\favicon\\touchicon.png node_modules\\@jellyfin\\ux-web\\favicon\\touchicon.png && copy /Y custom-assets\\favicon\\touchicon72.png node_modules\\@jellyfin\\ux-web\\favicon\\touchicon72.png && copy /Y custom-assets\\favicon\\touchicon114.png node_modules\\@jellyfin\\ux-web\\favicon\\touchicon114.png && copy /Y custom-assets\\favicon\\touchicon144.png node_modules\\@jellyfin\\ux-web\\favicon\\touchicon144.png && copy /Y custom-assets\\favicon\\touchicon512.png node_modules\\@jellyfin\\ux-web\\favicon\\touchicon512.png",
     "start": "npm run serve",
     "serve": "webpack serve --config webpack.dev.js",
     "build:analyze": "cross-env NODE_ENV=\"production\" webpack --config webpack.analyze.js",
