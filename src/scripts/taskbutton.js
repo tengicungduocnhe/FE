@@ -110,6 +110,11 @@ function taskbutton(options) {
         options.panel.classList.add('hide');
     }
 
+    if (!button) {
+        console.warn('taskbutton: button element is null or undefined');
+        return;
+    }
+
     if (options.mode == 'off') {
         button.removeEventListener('click', onButtonClick);
         Events.off(serverNotifications, 'ScheduledTasksInfo', onScheduledTasksUpdate);
